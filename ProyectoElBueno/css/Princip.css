@@ -1,0 +1,347 @@
+*{   margin: 0;
+box-sizing: border-box;
+}
+body{ font-family: sans-serif;
+	background: rgb(0,0,0,0.8);
+}
+ .des-img{
+    max-width: 85%;
+}
+.logo{
+    width: 80px;
+    height: 80px;
+}
+.contenidos{
+   margin: 100%;
+    margin: auto;
+}
+/*-----------------header---------------------------*/
+.cabeza{
+    background: #000;
+}
+
+.cabeza .contenidos{
+    display: flex;
+     justify-content: space-between;
+}
+.logo, .icon-menu{
+    margin: 5px;
+    color: #fff;
+}
+.icon-menu{
+    display: block;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.nav{ 
+    position: absolute;
+    top: 60px;
+    left: -100%;
+    transition: all 0.5s;
+    width: 100%;
+    z-index: 100;
+}
+.menu{
+    list-style: none;
+    padding: 0;margin: 0;  
+}
+.link, .link--select, .menu_link--select, .li--select{
+     cursor: pointer; display: block;
+     background: #000;
+    padding: 15px;
+    color: #fff;
+    height: 60px;
+    border-bottom: 1px solid skyblue ;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.link:hover{
+    background:  #1ED760  ;
+    color: #fff;
+}
+.muestrate{
+    left: 0;
+}
+/*-----------------slider---------------------------*/
+.banner img{
+    width: 100%;
+}
+.lo{
+ filter: brightness(60%);
+}
+.banner {
+  position: relative;
+  text-align: center;
+} 
+
+.banner-2{
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    padding: 20px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+/*-----------------estilos del destino--------------*/
+.des-titulo{
+    font-size: 40px;
+    text-align: center;   
+}
+.des-tex{
+    font-size: 20px;
+    text-align: justify;
+    padding: 15px;
+}
+.des-img{
+  width: 100%;
+ margin: 24px;
+}
+.des-olo{
+     position: relative;
+}
+  .des-olo h3{
+ 	position: absolute;
+ 	top: 50%;
+ 	left: 50%;
+ 	transform: translate(-50%, -50%);
+ 	color: #fff;
+ 	font-size: 32px;
+ 	font-weight: bold;
+ }
+ 
+.des{
+	
+	text-align: center;
+	color: #fff;
+}
+.des-img{
+	width: 100%;
+}
+ 
+/*------------------------------------------*/
+.es{
+	
+	text-align: center;
+	color: #fff;
+}
+.pro-titulo{
+	font-size: 30px;
+	padding: 25px;
+
+}
+.es-img{
+	width: 100%;
+}
+.info{
+	
+	color: #fff;
+	margin-top: -6px;
+}
+.es-titulo{
+	font-size: 25px;
+	padding: 5px;
+}
+.es-tex{
+	padding: 25px;
+	text-align: justify;
+}
+.es-olo1 , .es-olo2, .es-olo3{
+margin: 10PX;
+}
+.es .contenidos{
+	display: flex;
+	flex-wrap:wrap;
+	justify-content: center; 
+}
+/*--------------------------------------*/
+.ofe-titulo{
+padding: 25px;
+text-align: center;
+font-size: 30px;
+color: #fff;
+}
+.ofe-img{
+	width: 100%;
+	filter:brightness(60%); 
+}
+.ofe-olo{
+	position: relative;
+	padding: 10px;
+
+}
+.ofe-olo h4{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+	font-size: 30px;
+}
+.ofe-olo:hover .ofe-img{
+	filter: brightness(100%);
+}
+.ofe .contenidos{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+/*------------------------------------------*/
+.ultimo-img{
+	width: 100%;
+	filter: brightness(60%);
+
+}
+.in-ultimo{
+	position: relative;
+	margin: 10px;
+}
+.ultimo-titulo{
+	color: #fff;
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 22px;
+	text-align: center;
+
+}
+.ultimo-tex{
+	color: #fff;
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 18px;
+	text-align: center;
+}
+.ultimo .contenidos{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+/*----------------------------------------------------*/
+
+.saitama{
+	width:20px;
+	margin: 10px;
+}
+footer .contenidos{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
+}
+.hola{
+	text-align: center;
+	font-size: 20px;
+}
+.red{
+	width: 100%;
+	text-align: center;
+}
+/*---------------------------------------------------*/
+@media(min-width: 480px){
+	.banner-2{
+		top: 32%;
+		width: 80%;
+		padding: 8px;
+	}
+	.banner-2 p{
+		display: block;
+		font-size: 17px;
+
+	}
+		.slide-2{
+			display: block;
+			bottom: 3px;
+			font-size: 17px;
+		}
+		.des-img{
+			width: 90%;
+		}
+		.des{
+			padding: 10px;
+		}
+		.es-olo1, .es-olo2, .es-olo3{
+			width: 90%
+		}
+		.ofe-olo{
+			font-size: 40px;
+		}
+		.ultimo-titulo{
+			font-size: 50px;
+
+		}
+		.ultimo-tex{
+			font-size: 22px;
+		}
+}
+@media(min-width: 768px){
+	.banner-des{
+		top:50%;
+	}
+	.banner-des h1{
+		font-size: 42px;
+
+	}
+	.banner-des p{
+		font-size: 18px;
+		
+	}
+}
+@media(min-width: 1024px){
+	.contenidos .nav{
+		width: 315px;
+	}
+	.logo{
+		margin: 5px;
+		right: 200px;
+		padding: 0;
+	}
+	.nav{
+		position: static;
+		width: auto;
+		background:rgb(0,0,0,0); 
+		padding: 0;
+
+	}
+	.menu{
+		display: flex;
+		margin: 10px;
+	}
+	.icon-menu{
+		display: none;
+	}
+	.link{
+		border:none;
+	}
+}
+.link--select{
+	background: #1ED760;
+}
+
+.menu_link--select{
+	background: #1ED760;
+}
+.li--select{
+	background: #1ED760;
+}
+.vid{
+	width: 800px;
+	height: 500px;
+}
+.vi{
+	position: absolute;
+ 	top: 50%;
+ 	left: 50%;
+ 	transform: translate(-50%, -50%);
+}
